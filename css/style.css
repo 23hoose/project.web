@@ -1,0 +1,13 @@
+/* ============================================================
+   Entry point. Подключает все модули через @import.
+   ============================================================ */
+
+@import url("normalize.css");
+@import url("tokens.css");
+@import url("base.css");
+
+@import url("components/header.css");
+@import url("components/hero.css");
+@import url("components/card.css");
+@import url("components/form.css");
+@import url("components/footer.css");
