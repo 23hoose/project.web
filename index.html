@@ -4,101 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путь к дому — приюты для животных и помощь</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="/">Путь к дому</a>
-        <nav>
-            <ul>
-                <li><a href="#help">Как помочь</a></li>
-                <li><a href="#shelters">Приюты</a></li>
-                <li><a href="#volunteer">Волонтёрство</a></li>
+    <header class="header container">
+        <a href="/" class="header__logo">Путь к дому</a>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a href="#help" class="header__nav-link">Как помочь</a></li>
+                <li><a href="#shelters" class="header__nav-link">Приюты</a></li>
+                <li><a href="#volunteer" class="header__nav-link">Волонтёрство</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <h1>Помоги животным найти дом</h1>
-            <p>Узнай, какие приюты есть рядом, чем им помочь
-               и как стать волонтёром.</p>
-            <a href="#shelters">Смотреть приюты</a>
-            <a href="#volunteer">Стать волонтёром</a>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1 class="hero__title">Помоги животным найти дом</h1>
+                <p class="hero__subtitle">Узнай, какие приюты есть рядом, чем им помочь
+                   и как стать волонтёром.</p>
+                <div class="hero__actions">
+                    <a href="#shelters" class="hero__button hero__button--primary">Смотреть приюты</a>
+                    <a href="#volunteer" class="hero__button hero__button--secondary">Стать волонтёром</a>
+                </div>
+            </div>
         </section>
 
-        <section id="help">
+        <section id="help" class="container">
             <h2>Как можно помочь</h2>
 
-            <article>
-                <h3>Корм</h3>
-                <p>Передать сухой или влажный корм в ближайший приют.</p>
-            </article>
+            <div class="cards">
+                <article class="card">
+                    <h3 class="card__title">Корм</h3>
+                    <p class="card__text">Передать сухой или влажный корм в ближайший приют.</p>
+                </article>
 
-            <article>
-                <h3>Лекарства</h3>
-                <p>Помочь с медикаментами и ветеринарными процедурами.</p>
-            </article>
+                <article class="card">
+                    <h3 class="card__title">Лекарства</h3>
+                    <p class="card__text">Помочь с медикаментами и ветеринарными процедурами.</p>
+                </article>
 
-            <article>
-                <h3>Волонтёрство</h3>
-                <p>Помогать с выгулом, уборкой и социализацией животных.</p>
-            </article>
+                <article class="card">
+                    <h3 class="card__title">Волонтёрство</h3>
+                    <p class="card__text">Помогать с выгулом, уборкой и социализацией животных.</p>
+                </article>
 
-            <article>
-                <h3>Финансы</h3>
-                <p>Поддержать приют финансово — на корм, лечение, стройматериалы.</p>
-            </article>
+                <article class="card">
+                    <h3 class="card__title">Финансы</h3>
+                    <p class="card__text">Поддержать приют финансово — на корм, лечение, стройматериалы.</p>
+                </article>
+            </div>
         </section>
 
-        <section id="shelters">
+        <section id="shelters" class="container">
             <h2>Приюты рядом</h2>
 
-            <article>
-                <img src="assets/images/shelter-dog.jpg"
-                     alt="Собака в приюте «Верный друг»">
-                <h3>Приют «Верный друг»</h3>
-                <p>Адрес: г. Астрахань, ул. Звездная, 67.</p>
-                <p>Нужны: корм, лекарства, волонтёры.</p>
-            </article>
+            <div class="cards">
+                <article class="card">
+                    <img src="assets/images/shelter-dog.jpg"
+                         alt="Собака в приюте «Верный друг»"
+                         class="card__image"
+                         width="400" height="200">
+                    <h3 class="card__title">Приют «Верный друг»</h3>
+                    <p class="card__text">Адрес: г. Астрахань, ул. Звездная, 67.</p>
+                    <p class="card__text">Нужны: корм, лекарства, волонтёры.</p>
+                </article>
 
-            <article>
-                <img src="assets/images/shelter-cat.jpg"
-                     alt="Кошка в приюте «Тёплый дом»">
-                <h3>Приют «Тёплый дом»</h3>
-                <p>Адрес: г. Астрахань, ул. Мостовая, 37.</p>
-                <p>Нужны: корм, одеяла, помощь с выгулом.</p>
-            </article>
+                <article class="card">
+                    <img src="assets/images/shelter-cat.jpg"
+                         alt="Кошка в приюте «Тёплый дом»"
+                         class="card__image"
+                         width="400" height="200">
+                    <h3 class="card__title">Приют «Тёплый дом»</h3>
+                    <p class="card__text">Адрес: г. Астрахань, ул. Мостовая, 37.</p>
+                    <p class="card__text">Нужны: корм, одеяла, помощь с выгулом.</p>
+                </article>
+            </div>
         </section>
 
-        <section id="volunteer">
+        <section id="volunteer" class="container">
             <h2>Стать волонтёром</h2>
-            <p>Оставьте заявку — мы свяжемся с вами.</p>
 
-            <form action="#" method="post">
-    <fieldset>
-        <legend>Заявка волонтёра</legend>
+            <form action="#" method="post" class="form">
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Заявка волонтёра</legend>
 
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" name="name"
-               required autocomplete="name">
+                    <div class="form__field">
+                        <label for="name" class="form__label">Ваше имя</label>
+                        <input type="text" id="name" name="name"
+                               class="form__input"
+                               required autocomplete="name">
+                    </div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email"
-               required autocomplete="email">
+                    <div class="form__field">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" name="email"
+                               class="form__input"
+                               required autocomplete="email">
+                    </div>
 
-        <label for="message">Сообщение</label>
-        <textarea id="message" name="message"
-                  required></textarea>
+                    <div class="form__field">
+                        <label for="message" class="form__label">Сообщение</label>
+                        <textarea id="message" name="message"
+                                  class="form__textarea"
+                                  required></textarea>
+                    </div>
 
-        <button type="submit">Отправить заявку</button>
-    </fieldset>
-</form>
+                    <button type="submit" class="form__button">Отправить заявку</button>
+                </fieldset>
+            </form>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 «Путь к дому». Автор: 23hoose.</p>
-        <p>Связаться: <a href="mailto:indifferenntt@mail.ru">indifferenntt@mail.ru</a></p>
+    <footer class="footer container">
+        <p class="footer__copy">© 2026 «Путь к дому». Автор: 23hoose.</p>
+        <p class="footer__contact">
+            Связаться: <a href="mailto:indifferenntt@mail.ru" class="footer__link">indifferenntt@mail.ru</a>
+        </p>
     </footer>
 </body>
 </html>
