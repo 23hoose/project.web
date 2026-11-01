@@ -39,3 +39,10 @@
 ## Ограничения текущей итерации
 
 На этом этапе реализуется только структура и семантика HTML.
+
+## Визуальный макет
+
+Desktop-макет страницы в Figma:
+[Путь к дому — Desktop](https://www.figma.com/design/qVLpyoe6WhDjsCdWytqzJt/Untitled)
+
+Цвета, типографика и отступы в CSS (`css/tokens.css`) сверены с этим макетом.

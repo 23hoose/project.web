@@ -1,0 +1,37 @@
+/* ============================================================
+   Footer — подвал сайта.
+   Flexbox: текст слева, контакты справа.
+   ============================================================ */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md, 1rem);
+  padding: var(--space-lg, 2rem) 0;
+  border-top: 1px solid var(--color-border, #E6E6E6);
+  color: var(--color-muted, #6E6E6E);
+  font-size: var(--fs-sm, 0.875rem);
+}
+
+.footer__copy,
+.footer__contact {
+  margin: 0;
+}
+
+.footer__link {
+  color: var(--color-primary, #FFA85C);
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: var(--color-primary-hover, #FF9036);
+  text-decoration: underline;
+}
+
+.footer__link:focus-visible {
+  outline: 2px solid var(--color-focus, #FFA85C);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm, 4px);
+}
