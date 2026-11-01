@@ -4,15 +4,15 @@
 
 :root {
   /* Цвета */
-  --color-primary:        #FFA85C;
-  --color-primary-hover:  #FF9036;
-  --color-primary-active: #E67A23;
+  --color-primary:        #C75B12;
+  --color-primary-hover:  #A8490E;
+  --color-primary-active: #8A3A0B;
   --color-text:           #2A2A2A;
   --color-muted:          #6E6E6E;
   --color-bg:             #FFFFFF;
   --color-bg-soft:        #FFF6EE;
   --color-border:         #E6E6E6;
-  --color-focus:          #FFA85C;
+  --color-focus:          #C75B12;
 
   /* Градиент hero */
   --gradient-hero: linear-gradient(135deg, #FFF6EE 0%, #FFE8D6 100%);
