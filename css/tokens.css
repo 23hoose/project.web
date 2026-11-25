@@ -48,3 +48,25 @@
   --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.10);
   --shadow-button: 0 2px 6px rgba(184, 84, 16, 0.30);
 }
+/* ============================================================
+   Тёмная тема: переопределяем переменные на html,
+   когда установлен data-theme="dark".
+   ============================================================ */
+
+[data-theme="dark"] {
+  --color-text:           #F0F0F0;
+  --color-muted:          #A0A0A0;
+  --color-bg:             #1A1A1A;
+  --color-bg-soft:        #2A2A2A;
+  --color-border:         #3A3A3A;
+  --color-primary:        #FFA85C;
+  --color-primary-hover:  #FF9036;
+  --shadow-card:          0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-card-hover:    0 8px 24px rgba(0, 0, 0, 0.6);
+  --gradient-hero:        linear-gradient(135deg, #1F1F1F 0%, #2A2A2A 100%);
+}
+
+[data-theme="dark"] body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
