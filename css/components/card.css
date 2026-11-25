@@ -10,6 +10,7 @@
 }
 
 .card {
+  min-width: 0;
   flex: 1 1 260px;
   display: flex;
   flex-direction: column;
@@ -35,12 +36,14 @@
 }
 
 .card__title {
+  overflow-wrap: anywhere;
   font-size: var(--fs-lg, 1.25rem);
   margin-bottom: var(--space-sm, 0.5rem);
   color: var(--color-text, #2A2A2A);
 }
 
 .card__text {
+  overflow-wrap: anywhere;
   color: var(--color-muted, #6E6E6E);
   font-size: var(--fs-base, 1rem);
   margin-bottom: var(--space-sm, 0.5rem);
