@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Путь к дому — приюты для животных и помощь</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header class="header container">
@@ -16,6 +17,10 @@
                 <li><a href="#volunteer" class="header__nav-link">Волонтёрство</a></li>
             </ul>
         </nav>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Переключить тему">
+            <img src="assets/icons/theme-icon.png" alt="" class="theme-toggle__icon" width="20" height="20" aria-hidden="true">
+            <span class="theme-toggle__text">Тема</span>
+        </button>
     </header>
 
     <main>
@@ -69,6 +74,9 @@
                     <h3 class="card__title">Приют «Верный друг»</h3>
                     <p class="card__text">Адрес: г. Астрахань, ул. Звездная, 67.</p>
                     <p class="card__text">Нужны: корм, лекарства, волонтёры.</p>
+                    <button type="button" class="help-button" data-help-button>
+                        Оказать помощь <span data-help-count></span>
+                    </button>
                 </article>
 
                 <article class="card">
@@ -79,6 +87,9 @@
                     <h3 class="card__title">Приют «Тёплый дом»</h3>
                     <p class="card__text">Адрес: г. Астрахань, ул. Мостовая, 37.</p>
                     <p class="card__text">Нужны: корм, одеяла, помощь с выгулом.</p>
+                    <button type="button" class="help-button" data-help-button>
+                        Оказать помощь <span data-help-count></span>
+                    </button>
                 </article>
             </div>
         </section>
